@@ -67,7 +67,7 @@ def start_monitor():
 
 
 def main():
-  rnd = int(random.uniform(20, 90))
+  rnd = int(random.uniform(1, 5))
   print('rnd: ' + str(rnd))
   schedule.every(rnd).seconds.do(start_monitor)
 
